@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }) {
           <ThemeEditorDrawerButton pos="fixed" bottom={4} right={2} />
           <DarkModeSwitch />
           <Component {...pageProps} />
+          <div id="overlays" />
         </ThemeEditorProvider>
       </ColorModeProvider>
     </ChakraProvider>

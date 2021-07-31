@@ -8,6 +8,7 @@ export const DarkModeSwitch = () => {
       position="fixed"
       top="1rem"
       right="1rem"
+      style={{ zIndex: '9999' }}
       color="black"
       // backgroundColor="black"
       isChecked={isDark}

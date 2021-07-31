@@ -6,6 +6,10 @@ import {
   Box,
   Button,
 } from '@chakra-ui/react';
+import Header from '../components/Layout/Header';
+import Meals from '../components/Meals/Meals';
+import MealItemForm from '../components/Meals/MealItem/MealItemForm';
+import Cart from '../components/Cart/Cart';
 
 const Index = () => {
   //! this is just for dark mode...
@@ -21,10 +25,20 @@ const Index = () => {
   //!
 
   return (
-    <VStack minHeight="100vh" bg={bgColor[colorMode]}>
-      <Heading py={20} color={textColor[colorMode]} fontSize="6xl">
+    <VStack minHeight="150vh" bg={bgColor[colorMode]}>
+      <Heading
+        style={{ zIndex: 2 }}
+        py={20}
+        align="center"
+        mt={5}
+        color={textColor[colorMode]}
+        fontSize="3xl"
+      >
         Welcome to React
       </Heading>
+      <Cart />
+      <Header />
+      <Meals />
     </VStack>
   );
 };
