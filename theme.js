@@ -15,7 +15,7 @@ import '@fontsource/questrial';
 
 const breakpoints = createBreakpoints({
   sm: '40em',
-  md: '52em',
+  md: '50em',
   lg: '64em',
   xl: '80em',
 });
