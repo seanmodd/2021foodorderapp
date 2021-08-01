@@ -1,6 +1,5 @@
 import { Box, HStack, Image, VStack } from '@chakra-ui/react';
 import HeaderCartButton from './HeaderCartButton';
-import mealsImage from '../assets/meals.jpg';
 import classes from './Header.module.css';
 
 const Header = (props) => (
